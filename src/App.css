@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 18px;
+  background: #220C12;
+  color: #EBE0C2;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section h2 {
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 4px;
+  color: #C1914F;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+section h2::before,
+section h2::after {
+  content: " ✦ ";
+  color: #9F0A10;
+}
+
+section + section {
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid #430102;
+}

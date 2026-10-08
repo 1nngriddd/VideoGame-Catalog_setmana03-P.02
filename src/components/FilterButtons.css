@@ -1,0 +1,51 @@
+.filters {
+  background: #430102;
+  border: 1px solid #C1914F;
+  outline: 1px solid #430102;
+  outline-offset: 4px;
+  padding: 24px;
+  margin-bottom: 56px;
+}
+
+.filter-group + .filter-group {
+  margin-top: 22px;
+}
+
+.filter-group h3 {
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #C1914F;
+  margin-bottom: 12px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.buttons button {
+  background: transparent;
+  color: #EBE0C2;
+  border: 1px solid #C1914F;
+  border-radius: 0;
+  padding: 6px 14px;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.buttons button:hover {
+  background: #C1914F;
+  color: #000000;
+}
+
+.buttons button.active {
+  background: #9F0A10;
+  border-color: #9F0A10;
+  color: #EBE0C2;
+}

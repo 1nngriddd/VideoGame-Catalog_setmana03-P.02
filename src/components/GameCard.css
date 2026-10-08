@@ -1,0 +1,80 @@
+.game-card {
+  background: #000000;
+  border: 1px solid #430102;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.25s;
+}
+
+.game-card:hover {
+  border-color: #C1914F;
+}
+
+.game-card img {
+  width: 100%;
+  aspect-ratio: 460 / 215;
+  object-fit: cover;
+  background: #430102;
+  filter: sepia(0.25) contrast(1.05);
+  transition: filter 0.25s;
+}
+
+.game-card:hover img {
+  filter: none;
+}
+
+.game-info {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.game-info h3 {
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #EBE0C2;
+}
+
+.genre {
+  color: #C1914F;
+  font-style: italic;
+}
+
+.year {
+  color: #EBE0C2;
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+.fav-button {
+  margin-top: 12px;
+  padding: 8px;
+  border: 1px solid #C1914F;
+  border-radius: 0;
+  background: transparent;
+  color: #C1914F;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.fav-button:hover {
+  background: #C1914F;
+  color: #000000;
+}
+
+.fav-button.remove {
+  background: #9F0A10;
+  border-color: #9F0A10;
+  color: #EBE0C2;
+}
+
+.fav-button.remove:hover {
+  background: #430102;
+  border-color: #9F0A10;
+}
